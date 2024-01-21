@@ -1,0 +1,102 @@
+/* Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* Remove Browser Defaults */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global CSS Variables */
+
+:root {
+  --clr-Primary: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 20%);
+  --clr-darkgrey: hsl(0, 0%, 12%);
+  --clr-offblack: hsl(0, 0%, 8%);
+  --ff-primary: "Inter", sans-serif;
+  --transition: all 0.3s linear;
+  --radius: 15px;
+}
+
+/* Global Styles */
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-offblack);
+  color: var(--clr-white);
+  font-size: 14px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--clr-Primary);
+  margin-top: 5px;
+}
+
+p {
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Individual Styles */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile-section {
+  background: var(--clr-darkgrey);
+  width: 375px;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-top: 30px;
+}
+
+.social-box {
+  color: var(--clr-white);
+  background: var(--clr-grey);
+  padding: 20px 30px;
+  border-radius: var(--radius);
+  width: 85%;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.social-box:hover {
+  background: var(--clr-Primary);
+  color: var(--clr-offblack);
+}
+
+/* I have not made a specific layout for desktop as the preview looked the same */
